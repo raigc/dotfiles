@@ -1,0 +1,70 @@
+! -----------------------------------------
+! ROFI Color theme
+! -----------------------------------------
+rofi.color-enable:true
+rofi.color-window: #1c1c1c, #1c1c1c, #fbc376
+rofi.color-normal: #1c1c1c, #fbc376, #282828, #5c5c5c, #fbc376
+!rofi.color-active:
+!rofi.color-urgent:
+rofi.font: Terminus 11
+rofi.separator-style: solid
+rofi.hide-scrollbar: true
+rofi.location: 0
+rofi.width: 420
+rofi.lines: 8
+
+! -----------------------------------------
+! Urxvt Color theme
+! -----------------------------------------
+*background: #1c1c1c
+*foreground: #fbc376
+*cursorColor: #fbc376
+URxvt.transparent: true
+URxvt.shading: 20
+
+! Black
+*color0: #1c1c1c
+*color8: #5c5c5c
+
+! Red
+*color1: #901c1c
+*color9: #901c1c
+
+! Green
+*color2: #a1b56c
+*color10: #a1b56c
+
+! Yellow
+*color3: #fbc376
+*color11: #fbc376
+
+! Blue
+*color4: #71a7f0
+*color12: #71a7f0
+
+! Magenta
+*color5: #d496d2
+*color13: #d496d2
+
+! Cyan
+*color6: #33c8b4
+*color14: #33c8b4
+
+! White
+*color7: #acacac
+*color15: #acacac
+
+URxvt.font: xft:Terminus:size=11
+URxvt.scrollBar: false
+URxvt.cursoBlink: true
+URxvt.internalBorder: 10
+URxvt.perl-ext: default,matcher
+URxvt.matcher.button: 1
+URxvt.url-launcher: /usr/bin/chromium
+
+! Enables copy/paste with Ctrl-Shift-C/V
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.perl-ext-common: default,clipboard
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
