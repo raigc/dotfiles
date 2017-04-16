@@ -55,7 +55,6 @@ font-1 = FontAwesome:size=10;2
 ;font-2 = Termsynu:size=8:antialias=false;-2
 
 modules-left = powermenu
-modules-center = apps
 modules-right = volume date
 
 [bar/bottom]
@@ -84,6 +83,7 @@ font-1 = FontAwesome:size=8;2
 ;font-5 = Termsynu:size=8:antialias=false;0
 
 modules-left = i3 filesystem
+;modules-center = apps
 modules-right = wired-network cpu memory
 
 [module/battery]
@@ -292,9 +292,17 @@ label-mounted =  %percentage_used% %
 label-unmounted = %mountpoint%: ∅
 
 [module/apps]
-type = custom/menu
-label-separator = |
-menu-0-0 = Browsers
-menu-0-0-exec = menu-open-1
-menu-0-2 = Multimedia
-menu-0-2-exec = menu-open-3
+type = internal/mpd
+
+host = 127.0.0.1
+port = 6600
+password =
+interval = 5
+format-online = fi <label-song>
+label-song = %artist% - %title%
+format-online-padding = 10
+format-online-foreground = #44ffffff
+format-offline = <label-offline> X
+label-offline = Off
+format-offline-padding = 10
+format-offline-foreground = #77ff0000

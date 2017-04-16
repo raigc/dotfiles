@@ -214,3 +214,4 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id compton
 
 new_window none
+

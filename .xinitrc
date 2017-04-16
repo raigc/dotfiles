@@ -53,5 +53,5 @@ fi
 #xterm -geometry 80x50+494+51 &
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
-
+setxkbmap -model abnt2 -layout br -variant abnt2
 exec i3
